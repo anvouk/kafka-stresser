@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.whatever'
+version '1.0.0'
+
+mainClassName = 'Main'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka_2.13:2.6.0'
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+    implementation 'io.vertx:vertx-web:3.9.3'
+    implementation 'org.json:json:20200518'
+}
